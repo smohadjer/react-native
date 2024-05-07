@@ -20,6 +20,10 @@ export function HomeScreen({ navigation, route }) {
                     title="Create post"
                     onPress={() => navigation.navigate('CreatePost')}
                 />
+                <Button
+                    title="Webview Example"
+                    onPress={() => navigation.navigate('Webview')}
+                />
                 <Text style={{ margin: 10 }}>Post: {route.params?.post}</Text>
             </View>
         </ScrollView>

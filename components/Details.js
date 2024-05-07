@@ -1,20 +1,13 @@
 import { Button, Text, View } from 'react-native';
 
 export function DetailsScreen({ route, navigation }) {
-    /* 2. Get the param */
     const { itemId, otherParam } = route.params;
-
-    if (!otherParam) {
-        navigation.setParams({
-            otherParam: 'default value set via navigation.setParams()',
-        });
-    }
 
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>Details Screen</Text>
         <Text>itemId: {JSON.stringify(itemId)}</Text>
-        <Text>otherParam: {JSON.stringify(otherParam)}</Text>
+        <Text>otherParam: {JSON.stringify(otherParam) || 'no param found'}</Text>
         <Button
           title="Go to Details... again"
           onPress={() =>
