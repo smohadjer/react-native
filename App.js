@@ -5,6 +5,7 @@ import { CreatePostScreen } from './components/CreatePost';
 import { HomeScreen } from './components/Home';
 import { DetailsScreen} from './components/Details';
 import { WebviewScreen } from './components/WebviewTest';
+import 'react-native-reanimated';
 
 const Stack = createNativeStackNavigator();
   
