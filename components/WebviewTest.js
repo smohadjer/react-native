@@ -3,8 +3,9 @@ import { WebView } from 'react-native-webview';
 export function WebviewScreen() {
     return (
       <WebView
-        source={{ 
-            uri: 'http://192.168.178.134/cookie.php',
+        source={{
+            //uri: 'http://192.168.178.134/cookie.php',
+            uri: 'http://192.168.0.146/cookie.php',
             headers: {
                 Cookie: 'cookie1=test; cookie2=dfasdfdas',
             },

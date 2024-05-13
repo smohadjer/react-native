@@ -25,6 +25,11 @@ export function HomeScreen({ navigation, route }) {
                     onPress={() => navigation.navigate('Webview')}
                 />
                 <Text style={{ margin: 10 }}>Post: {route.params?.post}</Text>
+
+                <Button
+                    title="Test page"
+                    onPress={() => navigation.navigate('Test')}
+                />
             </View>
         </ScrollView>
     );
