@@ -6,7 +6,6 @@ import { HomeScreen } from './components/Home';
 import { DetailsScreen } from './components/Details';
 import { Test } from './components/Test';
 import { WebviewScreen } from './components/WebviewTest';
-import 'react-native-reanimated';
 
 const Stack = createNativeStackNavigator();
   
